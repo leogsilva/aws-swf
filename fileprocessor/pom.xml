@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.g2.aws</groupId>
-	<artifactId>swf-lambda-greetings</artifactId>
+	<artifactId>swf-lambda-fileprocessor</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -95,7 +95,7 @@
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk</artifactId>
-			<version>[1.7.2,2.0.0)</version>
+			<version>1.11.91</version>
 		</dependency>
 		<!-- <dependency> <groupId>org.aspectj</groupId> <artifactId>aspectjrt</artifactId> 
 			<version>1.8.10</version> </dependency> -->
@@ -145,7 +145,7 @@
 							<outputDirectory>src/main/generated</outputDirectory>
 							<resources>
 								<resource>
-									<directory>target/classes</directory>
+									<directory>target/generated-sources/annotations</directory>
 									<includes>
 										<include>**/*.java</include>
 									</includes>
